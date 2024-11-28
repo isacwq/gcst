@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gcst"
+version = "0.1.0"
+dependencies = [
+  "azure-identity>=1.19.0",
+  "azure-storage-blob>=12.24.0",
+]
+requires-python = ">=3.9"
+authors = [
+  {name = "Isac Tomaz da Silva", email = "isactomaz@protonmail.com"},
+]
+description = "Generate container SAS Token"
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+  "Operating System :: POSIX :: Linux",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+Repository = "https://github.com/isacwq/gcst.git"
+Issues = "https://github.com/isacwq/gcst/issues"
+
+[project.scripts]
+gcst = "gcst:main"
